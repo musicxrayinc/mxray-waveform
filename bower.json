@@ -1,0 +1,31 @@
+{
+  "name": "mxray-waveform",
+  "version": "0.0.0",
+  "authors": [
+    "jeff durand <jeff.durand@gmail.com>"
+  ],
+  "main": "mxray-waveform.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "audio",
+    "waveform"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.3",
+    "polymer": "polymer/polymer#^1.0.3"
+  },
+  "devDependencies": {
+    "iron-ajax": "PolymerElements/iron-ajax#^1.0.1"
+  }
+
+}

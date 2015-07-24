@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../iron-ajax/iron-ajax.html"></script>
+    <link rel="import" href="mxray-waveform.html">
+    <style is="custom-style">
+
+      mxray-waveform {
+        width: 100%;
+        height: 64px;
+        background: #F4F4F4;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <template is="dom-bind">
+      <div>
+        <label>duration</label>
+        <input type="text" value="{{duration::input}}"/>
+      </div>
+      <div>
+        <label>playhead</label>
+        <input type="text" value="{{playhead::input}}"/>
+      </div>
+      <iron-ajax last-response="{{waveformResp}}" auto url="https://d26dwb081hxmfo.cloudfront.net/aHR0cDovL2QxZGZvd25xaG9xenlvLmNsb3VkZnJvbnQubmV0LzE0MzE0L3hyYXlzLzE2MjYzODIvc29uZy8wNTQwNTI5MDEzYmUwMTMzZDA4ZjIyMDAwYjViMGQxOS5tcDM%3D/waveform.json"></iron-ajax>
+      <mxray-waveform points="[[waveformResp.waveformjs]]"></mxray-waveform>
+    </template>
+  </body>
+</html>
