@@ -1,6 +1,6 @@
 {
   "name": "mxray-waveform",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "authors": [
     "jeff durand <jeff.durand@gmail.com>"
   ],
@@ -27,5 +27,4 @@
   "devDependencies": {
     "iron-ajax": "PolymerElements/iron-ajax#^1.0.1"
   }
-
 }
