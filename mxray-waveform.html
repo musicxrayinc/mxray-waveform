@@ -237,9 +237,10 @@
         });
       },
       ready: function(){
-        //waveform
-	      //console.log('element is showing up okay');
-  	    // do something when it's ready.
+	var ctx = this;
+	window.addEventListener("resize", function(){
+	  ctx.updateGraphic();
+	});
       }
     });
   </script>
